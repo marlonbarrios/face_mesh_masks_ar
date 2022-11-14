@@ -1,4 +1,4 @@
-import {loadTexture} from "./libs/loader.js";
+import {loadGLTF, loadTexture} from "./libs/loader.js";
 const THREE = window.MINDAR.FACE.THREE;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     scene.add(light);
 
     const faceMesh = mindarThree.addFaceMesh();
-    const texture = await loadTexture('./assets/facemesh/blue_lion.png');
+
+  
+    //const texture = await loadTexture('./assets/facemesh/blue_lion.png');
     //const texture = await loadTexture('./assets/facemesh/mask.png');
-   // const texture = await loadTexture('./assets/facemesh/blue-mask.png');
+   const texture = await loadTexture('./assets/facemesh/blue-mask.png');
       //const texture = await loadTexture('./assets/facemesh/purepng.png');
 
     faceMesh.material.map = texture;
@@ -29,3 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   start();
 });
+
+
