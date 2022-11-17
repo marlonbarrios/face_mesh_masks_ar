@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const faceMesh = mindarThree.addFaceMesh();
 
   
-    const texture = await loadTexture('./assets/facemesh/mask_ar_6.png');
+    const texture = await loadTexture('./assets/facemesh/polygon_mask_1.png');
     //const texture = await loadTexture('./assets/facemesh/mask.png');
    //const texture = await loadTexture('./assets/facemesh/blue-mask.png');
       //const texture = await loadTexture('./assets/facemesh/purepng.png');
